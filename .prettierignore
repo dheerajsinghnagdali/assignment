@@ -1,0 +1,6 @@
+# folders
+.huksy/
+public/
+
+# files
+package-lock.josn
