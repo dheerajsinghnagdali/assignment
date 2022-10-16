@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import { Heading } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
-  return <h1>Next.js</h1>;
+  return <Heading>Chakra app</Heading>;
 };
 
 export default Home;
