@@ -94,10 +94,10 @@ const SalePrize: React.FC<{
         textDecoration="line-through"
         color="red.500"
       >
-        ${getDiscountedPrize(discount, prize)}
+        ${prize}
       </Text>
       <Text fontSize="sm" fontWeight="semibold" color="white">
-        ${prize}
+        ${getDiscountedPrize(discount, prize)}
       </Text>
     </VStack>
   );
@@ -142,10 +142,10 @@ const Duration: React.FC<{
 
   useEffect(() => {
     function getEndTime() {
-      const deadline = new Date(
+      const endDate = new Date(
         hasOnSale ? `${flashDealEndsIn}` : `${auctionEndsIn}`
       );
-      return deadline;
+      return endDate;
     }
 
     const interval = setInterval(() => {
