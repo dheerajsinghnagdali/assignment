@@ -237,10 +237,10 @@ const Card: React.FC<{
             py="0.5"
             variant="outline"
             rounded="full"
-            colorScheme="yellow"
+            colorScheme="indigo"
             color="white"
           >
-            Auction
+            Sale
           </Badge>
         ) : (
           <Badge
@@ -248,10 +248,10 @@ const Card: React.FC<{
             py="0.5"
             variant="outline"
             rounded="full"
-            colorScheme="indigo"
+            colorScheme="yellow"
             color="white"
           >
-            Sale
+            Auction
           </Badge>
         )}
       </HStack>
